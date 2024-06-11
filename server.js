@@ -1,12 +1,10 @@
-
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const productRoutes = require('./routes/productRoutes')
 
-let url = 'mongodb://localhost:27017/mongoose_eg';
+let url = 'mongodb+srv://Cluster77178:ZH1Wd2F4XXV6@cluster77178.iqtl6hq.mongodb.net/';
 let app = express();
 
 app.use(cors());
@@ -27,3 +25,4 @@ app.listen(port, () => {
 });
 
 app.use("/", productRoutes)
+
